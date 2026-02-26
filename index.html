@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junior Web Developer | oliveer</title>
+    <title>Junior Web Developer ⬩ Oliveer</title>
 
     <link rel="icon" href="./assets/pictures/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="./assets/pictures/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -13,10 +13,43 @@
     <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
 </head>
 <body>
-    <div class="page__wrapper">
-        <h1>Hey, I'm Oliveer 👋</h1>
+    <div class="page">
+        <main class="page__wrapper">
+            <div class="alert">
+                <img src="./assets/pictures/icons/star.svg" alt="Star">
+                <p>You made it. Welcome!</p>
+            </div>
+
+            <h1>Hey, I'm <i>Oliveer</i></h1>
+            <p>Junior Web Designer & Developer</p>
+            
+            <!-- <a href="#" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                <span class="btn__icon">
+                    <img src="./assets/pictures/icons/arrow.svg" alt="Extarnal site icon">
+                </span>
+                <span class="btn__text">
+                    My portfolio
+                </span>
+            </a> -->
+        </main>
+        <footer>
+            <div class="footer__inner">
+                <p>Let's chat ⬩ <a href="#" id="emailLink"></a></p>
+                <p>&copy; Oliveerstudio 2026</p>
+            </div>
+        </footer>
     </div>
-    <footer>&copy; oliveerstudio 2026</footer>
+
+    <script>
+        const user = "oliveerstudio";
+        const domain = "gmail.com";
+        const link = document.getElementById("emailLink");
+
+        const email = `${user}@${domain}`;
+
+        link.href = `mailto:${email}`;
+        link.textContent = email;
+    </script>
 </body>
 
 </html>
