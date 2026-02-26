@@ -26,6 +26,8 @@ html {
 
 /* Defaults */
 
+body { background-color: var(--c-secondary); }
+
 a {
     color: var(--c-secondary);
     text-decoration: none;
@@ -194,4 +196,5 @@ footer {
 .btn--primary:hover::before { 
     width: calc(100% - 0.25rem);
     transform: translateX(-0.125rem) scaleY(1.1);
+
 }
